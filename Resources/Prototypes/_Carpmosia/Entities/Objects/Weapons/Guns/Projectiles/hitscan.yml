@@ -1,7 +1,7 @@
 - type: entity
   parent: RedHeavyLaser
   id: XenoHeavyLaser
-  name: blue high-energy laser ray
+  name: indigo high-energy laser ray
   categories: [ HideSpawnMenu ]
   components:
   - type: HitscanBasicVisuals
@@ -14,6 +14,40 @@
     impactFlash:
       sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
       state: impact_xeno_laser
+
+- type: entity
+  parent: RedMediumLaser
+  id: XenoMediumLaser
+  name: indigo medium-energy laser ray
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_xeno_beam
+    travelFlash:
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: xeno_beam
+    impactFlash:
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_xeno_beam
+
+- type: entity
+  parent: RedLightLaser
+  id: XenoLightLaser
+  name: indigo low-energy laser ray
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_xeno_beam
+    travelFlash:
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: xeno_beam
+    impactFlash:
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_xeno_beam
 
 - type: entity
   parent: RedMediumLaser
@@ -31,3 +65,35 @@
     impactFlash:
       sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
       state: impact_retro
+
+- type: entity
+  parent: RedMediumLaser
+  id: RejuvenationLaser
+  name: beam made for healing
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Blunt: -5
+        Slash: -5
+        Piercing: -5
+        Heat: -5
+        Shock: -5
+        Cold: -5
+        Caustic: -5
+        Poison: -3
+        Radiation: -3
+        Asphyxiation: -1
+        Bloodloss: -5
+        Cellular: 0.1
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_rejuvenation
+    travelFlash:
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: rejuvenation
+    impactFlash:
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_rejuvenation

@@ -643,8 +643,13 @@
   - type: PointLight
     enabled: true
     color: "#c2385d"
+  #Carpmosia-start - makes it spin
     radius: 2.0
     energy: 7.0
+    mask: /Textures/_Carpmosia/Effects/LightMasks/triple_cone.png
+  - type: RotatingLight
+    speed: 720
+  #Carpmosia-end - makes it spin
   - type: AnomalousParticle
     particleType: Delta
   - type: Sprite
@@ -757,8 +762,10 @@
   - type: PointLight
     enabled: true
     color: "#38c24f"
-    radius: 2.0
-    energy: 7.0
+  #Carpmosia-start - makes it spin
+    radius: 4.0
+    energy: 14.0
+  #Carpmosia-end - makes it spin
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
     layers:
@@ -767,8 +774,8 @@
   - type: AnomalousParticle
     particleType: Default
     severityOverride: true
-    severityPerSeverityHit: 0.1
-    stabilityPerDestabilizingHit: 0.05
+    severityPerSeverityHit: 0.5
+    stabilityPerDestabilizingHit: 0.25
     healthPerWeakeningeHit: 1
     stabilityPerWeakeningeHit: -0.05
   - type: Projectile
