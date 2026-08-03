@@ -40,12 +40,12 @@
     availableModes:
     - FullAuto
     soundGunshot:
-      path: /Audio/Weapons/Guns/Hits/laser3.ogg
+      path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
   - type: MeleeWeapon
     attackRate: 1
     angle: 60
     animation: WeaponArcFist
-    wideAnimationRotation: 45
+    wideAnimationRotation: 225
     damage:
       types:
         Blunt: 15
@@ -65,8 +65,8 @@
 - type: entity
   name: phototherapy laser
   parent: [BaseWeaponPowerCellSmall, BaseGunWieldable, BaseSyndicateContraband]
-  id: WeaponPhotoTherapyLaser
-  description: A Highly experimental handheld medication device that uses concentrated light to evoke fast regeneration.
+  id: PhotoTherapyLaser
+  description: A Highly experimental handheld medication device that uses concentrated light to evoke fast regeneration, requires powercells.
   components:
   - type: Item
     size: Huge
@@ -96,7 +96,7 @@
       path: /Audio/Weapons/Guns/Hits/laser_sear_wall.ogg
   - type: BatteryAmmoProvider
     proto: RejuvenationLaser
-    fireCost: 25
+    fireCost: 14
   - type: Tag
     tags:
     - TurretCompatibleWeapon

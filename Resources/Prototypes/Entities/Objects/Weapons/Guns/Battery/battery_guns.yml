@@ -810,6 +810,10 @@
       fireCost: 100
     - proto: AnomalousParticleSigmaStrong
       fireCost: 100
+    #Carpmosia-start - elemental chimp
+    - proto: AnomalousParticleGammaStrong
+      fireCost: 100
+    #Carpmosia-end - elemental chimp
 
 - type: entity
   name: eye of a behonker
