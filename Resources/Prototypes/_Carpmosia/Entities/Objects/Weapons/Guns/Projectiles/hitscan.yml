@@ -80,14 +80,14 @@
         Heat: 2
   - type: HitscanBasicVisuals
     muzzleFlash:
-      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/zap.rsi
-      state: muzzle_retro
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_zap
     travelFlash:
-      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/zap.rsi
-      state: retro
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: zap
     impactFlash:
-      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/zap.rsi
-      state: impact_retro
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_zap
 
 - type: entity
   parent: RedMediumLaser
