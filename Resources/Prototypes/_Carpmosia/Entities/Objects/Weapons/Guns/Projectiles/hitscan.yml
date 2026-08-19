@@ -68,6 +68,29 @@
 
 - type: entity
   parent: RedMediumLaser
+  id: FastWeakLaser
+  name: fast laser beam
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TimedDespawn
+    lifetime: 0.5
+  - type: HitscanBasicDamage
+    damage:
+      types:
+        Heat: 2
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/zap.rsi
+      state: muzzle_retro
+    travelFlash:
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/zap.rsi
+      state: retro
+    impactFlash:
+      sprite: _Carpmosia/Objects/Weapons/Guns/Projectiles/zap.rsi
+      state: impact_retro
+
+- type: entity
+  parent: RedMediumLaser
   id: RejuvenationLaser
   name: beam made for healing
   categories: [ HideSpawnMenu ]

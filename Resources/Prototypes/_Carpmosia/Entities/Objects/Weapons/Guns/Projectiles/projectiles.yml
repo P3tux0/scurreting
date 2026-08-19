@@ -20,6 +20,18 @@
     count: 4
     spread: 9
 
+
+- type: entity
+  parent: BulletLaserWindowPiercingShotgun
+  id: BulletHitscanChaos
+  categories: [ HideSpawnMenu ]
+  name: hitscan chaos
+  components:
+  - type: ProjectileSpread
+    proto: RedLaserPractice
+    count: 10
+    spread: 90
+
 - type: entity
   parent: AnomalousParticleDelta
   id: AnomalousParticleGammaStrong
@@ -76,4 +88,4 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
   - type: BatteryAmmoProvider
-    proto: BulletLaserSpreadPiercing
+    proto: BulletHitscanChaos
