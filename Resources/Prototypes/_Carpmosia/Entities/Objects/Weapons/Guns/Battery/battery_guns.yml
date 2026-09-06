@@ -120,6 +120,8 @@
     fireRate: 14
     availableModes:
     - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/laser_sear_wall.ogg
   - type: BatteryAmmoProvider
     proto: FastWeakLaser
     fireCost: 5
