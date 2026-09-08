@@ -20,17 +20,27 @@
     count: 4
     spread: 9
 
-
 - type: entity
-  parent: BulletLaserWindowPiercingShotgun
-  id: BulletHitscanChaos
+  parent: BulletMiningChaos
+  id: BulletExcavateChaos
   categories: [ HideSpawnMenu ]
   name: hitscan chaos
   components:
   - type: ProjectileSpread
-    proto: RedLaserPractice
-    count: 10
+    proto: BulletMiningChaos
+    count: 2
     spread: 90
+
+- type: entity
+  parent: BulletKinetic
+  id: BulletMiningChaos
+  categories: [ HideSpawnMenu ]
+  name: hitscan chaos
+  components:
+  - type: ProjectileSpread
+    proto: BulletKinetic
+    count: 6
+    spread: 30
 
 - type: entity
   parent: AnomalousParticleDelta
@@ -68,7 +78,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
   - type: BatteryAmmoProvider
-    proto: RedLaserPractice
+    proto: BulletMiningChaos
     fireCost: 1
   - type: AutoShootGun
     enabled: true
@@ -88,4 +98,4 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
   - type: BatteryAmmoProvider
-    proto: BulletHitscanChaos
+    proto: BulletMiningChaos

@@ -110,7 +110,7 @@
             enabled: true
             inherent: true
           protos:
-          - ChunkDebrisSmall #VGRoid #Carpmosia edit - STOP LAGGING MY GAEM
+          - VGRoid #Carpmosia edit - STOP LAGGING MY GAEM
 
 - type: entity
   id: BaseStationCentcomm

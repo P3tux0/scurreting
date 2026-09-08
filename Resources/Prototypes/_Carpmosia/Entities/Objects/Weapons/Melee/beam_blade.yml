@@ -60,13 +60,13 @@
       left:
       - state: inhand-left-glow
         shader: unshaded
-        map: [ "inhand-glow" ]
+        map: [ "inhand-glow-left" ]
       - state: inhand-left-core
         shader: unshaded
       right:
       - state: inhand-right-glow
         shader: unshaded
-        map: [ "inhand-glow" ]
+        map: [ "inhand-glow-right" ]
       - state: inhand-right-core
         shader: unshaded
   - type: Reflect
@@ -126,14 +126,14 @@
       - state: inhand-left-glow
         color: "#FFFFFF"
         shader: unshaded
-        map: [ "inhand-glow" ]
+        map: [ "inhand-glow-left" ]
 #      - state: inhand-left-core
 #        shader: unshaded
       right:
       - state: inhand-right-glow
         color: "#FFFFFF"
         shader: unshaded
-        map: [ "inhand-glow" ]
+        map: [ "inhand-glow-right" ]
 #      - state: inhand-right-core
 #        shader: unshaded
   - type: Sprite
@@ -215,14 +215,14 @@
       - state: inhand-left-glow
         color: "#FFFFFF"
         shader: unshaded
-        map: [ "inhand-glow" ]
+        map: [ "inhand-glow-left" ]
 #      - state: inhand-left-core
 #        shader: unshaded
       right:
       - state: inhand-right-glow
         color: "#FFFFFF"
         shader: unshaded
-        map: [ "inhand-glow" ]
+        map: [ "inhand-glow-right" ]
 #      - state: inhand-right-core
 #        shader: unshaded
   - type: Sprite
@@ -294,14 +294,14 @@
       - state: inhand-left-glow
         color: "#FFFFFF"
         shader: unshaded
-        map: [ "inhand-glow" ]
+        map: [ "inhand-glow-left" ]
 #      - state: inhand-left-core
 #        shader: unshaded
       right:
       - state: inhand-right-glow
         color: "#FFFFFF"
         shader: unshaded
-        map: [ "inhand-glow" ]
+        map: [ "inhand-glow-right" ]
 #      - state: inhand-right-core
 #        shader: unshaded
   - type: Sprite
